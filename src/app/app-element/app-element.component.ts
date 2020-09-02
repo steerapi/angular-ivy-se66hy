@@ -13,7 +13,7 @@ import {
   styleUrls: ['./app-element.component.scss'],
   encapsulation: ViewEncapsulation.ShadowDom
 })
-export class NgCardElementComponent implements OnInit {
+export class AppElementComponent implements OnInit {
   @Input() data: string;
   dataObj;
 
