@@ -4,9 +4,10 @@ import { BrowserModule } from '@angular/platform-browser';
 import { createCustomElement } from '@angular/elements';
 
 import { AppElementComponent } from './app-element/app-element.component';
+import {MatButtonModule} from '@angular/material/button';
 
 @NgModule({
-  imports: [BrowserModule],
+  imports: [BrowserModule,MatButtonModule],
   declarations: [AppElementComponent],
   entryComponents: [AppElementComponent] // use entryComponents array instaed of bootstrap because it will be added dynamically.
 })
