@@ -2,7 +2,7 @@ import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { AppElementComponent } from './app-element.component';
 
-describe('NgCardElementComponent', () => {
+describe('AppElementComponent', () => {
   let component: AppElementComponent;
   let fixture: ComponentFixture<AppElementComponent>;
 
