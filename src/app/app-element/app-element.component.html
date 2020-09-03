@@ -1,8 +1,36 @@
 <h1>Sample Data</h1>
+<!-- <form class="example-form">
+  <mat-form-field class="example-full-width">
+    <mat-label>Favorite food</mat-label>
+    <input matInput placeholder="Ex. Pizza" value="Sushi">
+  </mat-form-field>
+
+  <mat-form-field class="example-full-width">
+    <mat-label>Leave a comment</mat-label>
+    <textarea matInput placeholder="Ex. It makes me feel..."></textarea>
+  </mat-form-field>
+</form> -->
+<mat-icon aria-hidden="false" aria-label="Example home icon">home</mat-icon>
+
+<mat-progress-bar mode="determinate" value="40"></mat-progress-bar>
+
+<div *ngIf="page==1">
+hello1
+</div>
+<div *ngIf="page==2">
+hello2
+</div>
+
+<div *ngFor="let i of list">
+  <!-- {{i}} -->
+  <button mat-raised-button>{{i}}</button>
+</div>
+
 <section>
   <div class="example-label">Basic</div>
   <div class="example-button-row">
-    <button mat-button>Basic</button>
+    <button mat-button (click)="click1()">Basic</button>
+    <div>{{text}} {{energy}}</div>
     <button mat-button color="primary">Primary</button>
     <button mat-button color="accent">Accent</button>
     <button mat-button color="warn">Warn</button>
@@ -10,4 +38,8 @@
     <a mat-button href="https://www.google.com/" target="_blank">Link</a>
   </div>
 </section>
-<p>{{dataObj | json}}</p>
+
+<app-kanorkkorn></app-kanorkkorn>
+<app-itthi></app-itthi>
+
+<pre>{{dataObj | json}}</pre>
